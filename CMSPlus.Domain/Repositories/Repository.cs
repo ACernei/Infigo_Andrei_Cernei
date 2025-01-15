@@ -1,16 +1,15 @@
-using System.Runtime.InteropServices.JavaScript;
 using CMSPlus.Domain.Entities;
 using CMSPlus.Domain.Interfaces;
 using CMSPlus.Domain.Persistance;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace CMSPlus.Domain.Repositories;
 
-public class Repository<T> : IRepository<T> where T: BaseEntity
+public class Repository<T> : IRepository<T> where T : BaseEntity
 {
     private readonly ApplicationDbContext _context;
     protected IQueryable<T> _dbSet => _context.Set<T>();
+
     public Repository(ApplicationDbContext context)
     {
         _context = context;
@@ -24,10 +23,7 @@ public class Repository<T> : IRepository<T> where T: BaseEntity
     public async Task<T> GetById(int id)
     {
         var entity = await _context.Set<T>().FindAsync(id);
-        if (entity == null)
-        {
-            throw new ArgumentException();
-        }
+        if (entity == null) throw new ArgumentException();
         return entity;
     }
 

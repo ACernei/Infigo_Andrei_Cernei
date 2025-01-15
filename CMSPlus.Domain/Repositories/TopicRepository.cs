@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CMSPlus.Domain.Repositories;
 
-public class TopicRepository:Repository<TopicEntity>,ITopicRepository
+public class TopicRepository : Repository<TopicEntity>, ITopicRepository
 {
     public TopicRepository(ApplicationDbContext context) : base(context)
     {

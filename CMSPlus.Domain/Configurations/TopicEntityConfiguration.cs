@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace CMSPlus.Domain.Configurations;
 
-public class TopicEntityConfiguration:IEntityTypeConfiguration<TopicEntity>
+public class TopicEntityConfiguration : IEntityTypeConfiguration<TopicEntity>
 {
     public void Configure(EntityTypeBuilder<TopicEntity> builder)
     {

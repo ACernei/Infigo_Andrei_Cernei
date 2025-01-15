@@ -1,7 +1,7 @@
 using CMSPlus.Domain.Interfaces;
+using CMSPlus.Domain.Migrations;
 using CMSPlus.Domain.Persistance;
 using CMSPlus.Domain.Repositories;
-using CMSPlus.Domain.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 

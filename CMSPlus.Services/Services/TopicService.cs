@@ -4,7 +4,7 @@ using CMSPlus.Services.Interfaces;
 
 namespace CMSPlus.Services.Services;
 
-public class TopicService:ITopicService
+public class TopicService : ITopicService
 {
     private readonly ITopicRepository _repository;
 
@@ -17,7 +17,7 @@ public class TopicService:ITopicService
     {
         return await _repository.GetById(id);
     }
-    
+
     public async Task<TopicEntity?> GetBySystemName(string systemName)
     {
         return await _repository.GetBySystemName(systemName);

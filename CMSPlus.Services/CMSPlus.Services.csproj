@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CMSPlus.Domain\CMSPlus.Domain.csproj" />
+        <ProjectReference Include="..\CMSPlus.Domain\CMSPlus.Domain.csproj" />
     </ItemGroup>
 
 </Project>

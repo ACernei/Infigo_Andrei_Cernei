@@ -1,14 +1,12 @@
-using System.IO.Enumeration;
-using CMSPlus.Domain.Entities;
-using CMSPlus.Domain.Interfaces;
 using CMSPlus.Domain.Models.TopicModels;
 using FluentValidation;
 
 namespace CMSPlus.Presentation.Validations;
 
-public class TopicCreateModelValidator:AbstractValidator<TopicCreateModel>
+public class TopicCreateModelValidator : AbstractValidator<TopicCreateModel>
 {
     private readonly TopicValidatorHelpers _topicValidatorHelpers;
+
     public TopicCreateModelValidator(TopicValidatorHelpers topicValidatorHelpers)
     {
         _topicValidatorHelpers = topicValidatorHelpers;

@@ -1,11 +1,10 @@
-@using System.Net
 @model CMSPlus.Domain.Models.TopicModels.TopicModel
 
 @{
     Layout = "_Layout";
 }
 <partial name="_RichTextEditorPartial"/>
-@using (Html.BeginForm("Delete", "Topic",FormMethod.Post))
+@using (Html.BeginForm("Delete", "Topic", FormMethod.Post))
 {
     <div class="form-group">
         <input type="hidden" asp-for="Id" class="form-control"></input>

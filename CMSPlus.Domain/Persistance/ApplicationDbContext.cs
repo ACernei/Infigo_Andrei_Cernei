@@ -1,10 +1,6 @@
-﻿using System.Reflection;
-using CMSPlus.Domain.Configurations;
-using CMSPlus.Domain.Entities;
-using Microsoft.AspNetCore.Identity;
+﻿using CMSPlus.Domain.Configurations;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-
 
 namespace CMSPlus.Domain.Persistance;
 

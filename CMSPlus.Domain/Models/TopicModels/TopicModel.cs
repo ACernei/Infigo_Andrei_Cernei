@@ -1,11 +1,12 @@
 namespace CMSPlus.Domain.Models.TopicModels;
 
-public class TopicModel:BaseTopicModel
+public class TopicModel : BaseTopicModel
 {
     public TopicModel()
     {
         UpdatedOnUtc = CreatedOnUtc = DateTime.UtcNow;
     }
+
     public int Id { get; set; }
     public string SystemName { get; set; }
     public string Title { get; set; }

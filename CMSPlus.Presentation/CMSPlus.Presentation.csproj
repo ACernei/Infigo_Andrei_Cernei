@@ -17,137 +17,14 @@
         <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.2" />
         <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.2" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.2">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CMSPlus.Domain\CMSPlus.Domain.csproj" />
-      <ProjectReference Include="..\CMSPlus.Services\CMSPlus.Services.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove="Views\Topics\Index.cshtml" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-af.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ar.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-bg.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-bn.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-bs.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ca.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-cs.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-cy.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-da.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-de.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-el.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-en.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-es.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-et.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-fa.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-fi.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-fil.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-fj.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-fr.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ga.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-gu.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-he.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-hi.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-hr.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ht.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-hu.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-id.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-is.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-it.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ja.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-kn.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ko.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-lt.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-lv.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-mg.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-mi.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ml.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-mr.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ms.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-mt.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-mww.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-nb.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-nl.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-otq.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-pa.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-pl.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-pt-pt.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-pt.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ro.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ru.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-sk.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-sl.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-sm.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-sr-Cyrl.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-sr-Latn.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-sv.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-sw.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ta.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-te.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-th.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-tlh-Latn.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-tlh-Piqd.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-to.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-tr.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ty.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-uk.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-ur.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-vi.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-yua.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-zh-Hans.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang-zh-Hant.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\lang\rte-lang.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\-combine-plugin.txt" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\all_plugins.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\html2pdf.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\imageeditor.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\insertcode.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\insertemoji.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\insertgallery.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\inserttemplate.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\samples\insertcode_v1.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\fabric.min.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\note.txt" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\svg\icon-a.svg" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\svg\icon-b.svg" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\svg\icon-c.svg" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\svg\icon-d.svg" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\tui-code-snippet.min.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\tui-color-picker.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\tui-color-picker.min.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\tui-image-editor.min.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\plugins\tui.image-editor\tui-image-editor.min.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\rte.js" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\rte_theme_default.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\colorpicker_more_ns.htm" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\help.htm" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\1x1.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpie_Color.cur" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpie_GradientPositionDark.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpie_GradientPositionLight.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpie_gradients.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpie_VerticalPosition.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpie_WebSafe.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_Color.cur" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_ColorSpace1.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_ColorSpace2.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_GradientPositionDark.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_GradientPositionLight.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_gradients.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_hue2.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_Vertical1.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_Vertical2.png" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_VerticalPosition.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\cpns_WebSafe.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\formbn.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\images\multiclavier.gif" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\richtexteditor_content.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\richtexteditor_preview.css" />
-      <_ContentIncludedByDefault Remove="wwwroot\lib\richtexteditor\runtime\richtexteditor_preview.js" />
+        <ProjectReference Include="..\CMSPlus.Domain\CMSPlus.Domain.csproj" />
+        <ProjectReference Include="..\CMSPlus.Services\CMSPlus.Services.csproj" />
     </ItemGroup>
 </Project>

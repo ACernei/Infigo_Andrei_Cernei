@@ -1,5 +1,4 @@
 using CMSPlus.Domain;
-using CMSPlus.Presentation.AutoMapperProfiles;
 using CMSPlus.Services;
 
 namespace CMSPlus.Presentation;
@@ -19,10 +18,10 @@ public class Startup
 
         services.AddDomain(connectionString);
         services.AddMigrations(connectionString);
-        
+
         services.AddPresentation();
         services.AddAutoMapper();
-        
+
         services.AddServices();
     }
 
