@@ -1,6 +1,6 @@
 using CMSPlus.Domain.Entities;
 using CMSPlus.Domain.Interfaces;
-using CMSPlus.Domain.Persistance;
+using CMSPlus.Domain.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace CMSPlus.Domain.Repositories;

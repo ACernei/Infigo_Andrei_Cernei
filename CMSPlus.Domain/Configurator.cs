@@ -1,6 +1,6 @@
 using CMSPlus.Domain.Interfaces;
 using CMSPlus.Domain.Migrations;
-using CMSPlus.Domain.Persistance;
+using CMSPlus.Domain.Persistence;
 using CMSPlus.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -14,6 +14,7 @@ public static class Configurator
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString));
         services.AddScoped<ITopicRepository, TopicRepository>();
+        services.AddScoped<ICommentRepository, CommentRepository>();
     }
 
     public static void AddMigrations(this IServiceCollection services, string? connectionString)
