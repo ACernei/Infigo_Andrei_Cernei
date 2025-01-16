@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace CMSPlus.Domain.Persistance;
+namespace CMSPlus.Domain.Persistence;
 
 public class ApplicationDbContext : IdentityDbContext
 {
@@ -19,6 +19,8 @@ public class ApplicationDbContext : IdentityDbContext
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfiguration(new TopicEntityConfiguration());
+        builder.ApplyConfiguration(new CommentEntityConfiguration());
+
         base.OnModelCreating(builder);
     }
 }
