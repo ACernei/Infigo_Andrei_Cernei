@@ -1,7 +1,7 @@
 using AutoMapper;
 using CMSPlus.Domain.Entities;
-using CMSPlus.Services.Interfaces;
 using CMSPlus.Domain.Models.TopicModels;
+using CMSPlus.Services.Interfaces;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
@@ -109,7 +109,7 @@ public class TopicController : Controller
             throw new ArgumentException($"Item with system name: {systemName} wasn't found!");
         }
 
-        var topicDto = _mapper.Map<TopicEntity, TopicDetailsModel>(topic);
+        var topicDto = _mapper.Map<TopicDetailsModel>(topic);
         return View(topicDto);
     }
 }

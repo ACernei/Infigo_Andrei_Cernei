@@ -1,7 +1,7 @@
 using CMSPlus.Domain.Models.TopicModels;
 using CMSPlus.Services.Interfaces;
 
-namespace CMSPlus.Presentation.Validations;
+namespace CMSPlus.Presentation.Validations.Topic;
 
 public class TopicValidatorHelpers
 {

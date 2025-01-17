@@ -4,6 +4,7 @@
     ViewBag.Title = "Details";
     Layout = "_Layout";
 }
+
 <div class="container m-3">
     <h1 class="row-12 text-black">@Model.Title</h1>
     <div class="row">
@@ -14,4 +15,7 @@
     <div class="row">
         <p class="col-12 text-black-50 text-end">System name: @Model.SystemName</p>
     </div>
+
+    <hr>
+    @await Html.PartialAsync("../Comment/_Create", new Domain.Models.CommentModels.CommentCreateModel { TopicId = Model.Id })
 </div>

@@ -1,0 +1,24 @@
+@model CMSPlus.Domain.Models.CommentModels.CommentCreateModel
+
+<div class="mt-5">
+    <h4><strong>Add a comment</strong></h4>
+    <form asp-action="Create" asp-controller="Comment" method="post">
+        <input type="hidden" name="TopicId" value="@Model.TopicId" />
+
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label for="Author">Full Name</label>
+            <input type="text" class="form-control" id="Author" name="Author" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="Body">Comment</label>
+            <textarea class="form-control" id="Body" name="Body" rows="4"></textarea>
+            <span asp-validation-for="Body" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+</div>
