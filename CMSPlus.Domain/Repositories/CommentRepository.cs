@@ -12,7 +12,7 @@ public class CommentRepository : Repository<CommentEntity>, ICommentRepository
     {
     }
 
-    public async Task<List<CommentEntity>> GetByTopicId(int topicId)
+    public async Task<IEnumerable<CommentEntity>> GetByTopicId(int topicId)
     {
         return await _dbSet.Where(x => x.TopicId == topicId).ToListAsync();
     }

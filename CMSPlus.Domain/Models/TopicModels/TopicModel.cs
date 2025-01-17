@@ -1,3 +1,5 @@
+using CMSPlus.Domain.Models.CommentModels;
+
 namespace CMSPlus.Domain.Models.TopicModels;
 
 public class TopicModel : BaseTopicModel
@@ -13,4 +15,5 @@ public class TopicModel : BaseTopicModel
     public string Body { get; set; }
     public DateTime? CreatedOnUtc { get; set; }
     public DateTime? UpdatedOnUtc { get; set; }
+    public IEnumerable<CommentModel> Comments { get; set; }
 }

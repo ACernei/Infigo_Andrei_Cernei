@@ -35,6 +35,9 @@ public class CommentController : Controller
             validationResult.AddToModelState(ModelState);
 
             var topicDto = _mapper.Map<TopicDetailsModel>(topic);
+            topicDto.Comments = _mapper.Map<IEnumerable<CommentModel>>(
+                await _commentService.GetByTopicId(topic.Id)
+            ).OrderByDescending(c => c.CreatedOnUtc);
 
             return View("../Topic/Details", topicDto);
         }

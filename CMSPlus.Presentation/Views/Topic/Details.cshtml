@@ -18,4 +18,7 @@
 
     <hr>
     @await Html.PartialAsync("../Comment/_Create", new Domain.Models.CommentModels.CommentCreateModel { TopicId = Model.Id })
+
+    <hr>
+    @await Html.PartialAsync("../Comment/_Comments", Model)
 </div>

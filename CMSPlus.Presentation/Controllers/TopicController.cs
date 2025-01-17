@@ -27,6 +27,8 @@ public class TopicController : Controller
     {
         var topics = await _topicService.GetAll();
         var topicToDisplay = _mapper.Map<IEnumerable<TopicEntity>, IEnumerable<TopicModel>>(topics);
+        topicToDisplay = topicToDisplay.OrderByDescending(t => t.CreatedOnUtc);
+
         return View(topicToDisplay);
     }
 
@@ -110,6 +112,8 @@ public class TopicController : Controller
         }
 
         var topicDto = _mapper.Map<TopicDetailsModel>(topic);
+        topicDto.Comments = topicDto.Comments.OrderByDescending(c => c.CreatedOnUtc);
+
         return View(topicDto);
     }
 }

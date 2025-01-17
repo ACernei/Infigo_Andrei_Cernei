@@ -1,0 +1,20 @@
+@model CMSPlus.Domain.Models.TopicModels.TopicDetailsModel
+
+<div class="mt-5">
+    <h4><strong>Comments</strong></h4>
+    @if (Model.Comments.Any())
+    {
+        @foreach (var comment in Model.Comments)
+        {
+            <div class="comment p-3 mt-2">
+                <h4>@comment.Author</h4>
+                <p>@comment.Body</p>
+                <p class="text-muted"><small>@comment.CreatedOnUtc.ToString("dd/MM/yyyy hh:mm")</small></p>
+            </div>
+        }
+    }
+    else
+    {
+        <p class="text-muted">No comments yet. Be the first to add one!</p>
+    }
+</div>

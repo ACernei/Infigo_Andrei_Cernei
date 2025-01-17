@@ -17,4 +17,9 @@ public class CommentService : ICommentService
     {
         await _commentRepository.Create(entity);
     }
+
+    public Task<IEnumerable<CommentEntity>> GetByTopicId(int id)
+    {
+        return _commentRepository.GetByTopicId(id);
+    }
 }
