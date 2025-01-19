@@ -1,0 +1,50 @@
+services:
+  cmsplus:
+    image: acernei/cmsplus:v1
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=db;Database=CMSPlus;User Id=sa;Password=yourStrong(!)Password;Trust Server Certificate=True;
+    ports:
+      - '5074:80'
+    networks:
+      - cmsplus-network
+    depends_on:
+      - sqlserver.configurator
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: db
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=yourStrong(!)Password
+      - MSSQL_PID=Express
+    volumes:
+      - ./data:/var/opt/mssql/data
+      - ./log:/var/opt/mssql/log
+      - ./secrets:/var/opt/mssql/secrets
+    ports:
+      - '1433:1433'
+    networks:
+      - cmsplus-network
+    restart: always
+    healthcheck:
+      test: ['CMD-SHELL', "/opt/mssql-tools18/bin/sqlcmd -C -S db -U sa -P 'yourStrong(!)Password' -Q 'SELECT 1' || exit 1"]
+      interval: 10s
+      retries: 10
+      start_period: 10s
+      timeout: 3s
+
+  sqlserver.configurator:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: configurator
+    volumes:
+      - ./init:/docker-entrypoint-initdb.d
+    networks:
+      - cmsplus-network
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+    command: /bin/bash /docker-entrypoint-initdb.d/entrypoint.sh
+
+networks:
+  cmsplus-network:
+    driver: bridge
